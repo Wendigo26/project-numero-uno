@@ -12,6 +12,22 @@
     <p>Your time:<span id="yourTime">Here you will see your time</span></p>
     <div id="picture"style="position:absolute;"></div>
 
+    <script>
+        var start;//monitor the start time
+        var end;//monitor the end time
+        var picture=document.getElementById("picture");//JS connects div tag box with id=picture
+        var game=false;//define changed game who says the game doesn't start at the beggining
+
+        //function that at random place shows a picture
+        function show(){
+            var top=Math.random()*150;//Randomly chooses pictures y coordinate
+            var right=Math.random()*400;//Randomly chooses pictures x coordinates
+
+            document.getElementById("picture").style.top=top+"px";
+            document.getElementById("picture").style.right=right+"px";
+            document.getElementById("picture").style.backgroundColor="#3a5a40";
+        }
+    </script>
     
 </body>
 </html>
