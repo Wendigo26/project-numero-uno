@@ -10,7 +10,7 @@
     <h1>How fast of a clicker are you?</h1>
     <p>Click on the first picture.Then as fast as you can click on the next picture to see how fast you really are.</p>
     <p>Your time:<span id="yourTime">Here you will see your time</span></p>
-    <div id="picture"style="position:absolute;"></div>
+    <div id="picture"style="position:absolute background-color:"#3a5a40" ;></div>
 
     <script>
         var start;//monitor the start time
@@ -25,8 +25,9 @@
 
             document.getElementById("picture").style.top=top+"px";
             document.getElementById("picture").style.right=right+"px";
-            document.getElementById("picture").style.backgroundColor="#3a5a40";
+            //document.getElementById("picture").style.backgroundColor="#3a5a40";
             document.getElementById("picture").style.display="block";
+            console.log("Hiii!");
         }
         show();
     </script>
