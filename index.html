@@ -33,14 +33,14 @@
 
         if(!game){
             game=true;//pasludina spēli par sākušos
-            picture.innerHTML="<img src='funny3.png'>";
+            picture.innerHTML="<img src='funny2.png'>";
             document.getElementById("picture").onclick=function(){
                 show();
             }
         }
         else{
             game=false;//pārtrauc spēli
-            picture.innerHTML="<img src='funny2.png'>";//parāda otro bildi
+            picture.innerHTML="<img src='funny3.png'>";//parāda otro bildi
             document.getElementById("picture").onclick=function(){
                 document.getElementById("picture").style.display="none";//paslēpj attēla bloku
                 end=new Date().getTime();//piefiksē spēles beigu laiku 
